@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./home/page";
 import About from "./about/page";
+import Portfolio from "./portfolio/page";
 
 export default function Landing() {
   return (
@@ -11,6 +12,9 @@ export default function Landing() {
       </section>
       <section id="about" className="min-h-screen">
         <About />
+      </section>
+      <section id="projects" className="min-h-screen">
+        <Portfolio />
       </section>
       {/* Add other sections similarly if needed */}
     </div>

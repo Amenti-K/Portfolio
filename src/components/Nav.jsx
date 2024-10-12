@@ -50,6 +50,9 @@ export default function Nav() {
           <h3 className="text-black dark:text-gray-300">About</h3>
         </a>
         <a onClick={() => handleScroll("projects")} className="cursor-pointer">
+          <h3 className="text-black dark:text-gray-300">Services</h3>
+        </a>
+        <a onClick={() => handleScroll("projects")} className="cursor-pointer">
           <h3 className="text-black dark:text-gray-300">My Works</h3>
         </a>
         <a onClick={() => handleScroll("contact")} className="cursor-pointer">
