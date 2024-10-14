@@ -19,7 +19,7 @@ export default function Projects() {
     },
     {
       name: "Mobile Banking App",
-      picture: "",
+      picture: "/assets/images/profile.jpg",
       description: "A banking app built with React Native and Firebase.",
       tools: ["React Native", "Firebase"],
       index: 2,
@@ -27,7 +27,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="flex items-center flex-col dark:bg-zinc-100 bg-gray-800 transition-colors duration-300  px-4 py-24 gap-y-8">
+    <div className="flex items-center flex-col bg-zinc-100 dark:bg-gray-800 transition-colors duration-300  px-4 py-24 gap-y-8">
       {projects.map((project) => (
         <ProjectCard
           key={project.index}

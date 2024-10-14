@@ -24,7 +24,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="w-screen fixed bg-zinc-100 shadow-lg dark:bg-gray-800 py-6 px-32 flex justify-between items-center">
+    <nav className="w-screen fixed bg-zinc-100 shadow-lg dark:bg-gray-800 py-6 px-32 flex justify-between items-center z-20">
       {/* Left side: Logo */}
       <div className="text-2xl text-black dark:text-white">
         <Link href="#home" onClick={() => handleScroll("home")}>
@@ -49,7 +49,7 @@ export default function Nav() {
         <a onClick={() => handleScroll("about")} className="cursor-pointer">
           <h3 className="text-black dark:text-gray-300">About</h3>
         </a>
-        <a onClick={() => handleScroll("projects")} className="cursor-pointer">
+        <a onClick={() => handleScroll("services")} className="cursor-pointer">
           <h3 className="text-black dark:text-gray-300">Services</h3>
         </a>
         <a onClick={() => handleScroll("projects")} className="cursor-pointer">
