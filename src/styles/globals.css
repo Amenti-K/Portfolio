@@ -2,26 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Dark mode styles */
+html.dark {
+  background-color: #000000; /* Black background for dark mode */
+  color: #ffffff; /* White text for dark mode */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Light mode styles */
+html {
+  background-color: #ffffff; /* White background for light mode */
+  color: #000000; /* Black text for light mode */
 }
