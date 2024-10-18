@@ -3,13 +3,7 @@
 @tailwind utilities;
 
 /* Dark mode styles */
-html.dark {
+html {
   background-color: #000000; /* Black background for dark mode */
   color: #ffffff; /* White text for dark mode */
-}
-
-/* Light mode styles */
-html {
-  background-color: #ffffff; /* White background for light mode */
-  color: #000000; /* Black text for light mode */
 }

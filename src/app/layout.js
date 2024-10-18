@@ -9,7 +9,6 @@ const SourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
   variable: "--font-source-code",
 });
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={SourceCodePro.className}>
@@ -17,6 +16,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer />
+        <div className="fixed inset-0 -z-10 h-full w-screen items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
       </body>
     </html>
   );

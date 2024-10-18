@@ -7,7 +7,7 @@ import Contact from "./contact/page";
 
 export default function Landing() {
   return (
-    <div>
+    <div className="max-w-screen">
       {/* Assign IDs to sections for navigation */}
       <section id="home" className="min-h-screen">
         <Home />
