@@ -35,11 +35,9 @@ const servicesData = [
 
 export default function ServicesPage() {
   return (
-    <div className="p-8 pt-32 bg-gray-800 dark:bg-zinc-100 min-h-screen text-white dark:text-gray-800">
-      <h1 className="text-4xl font-bold mb-8 text-center mb-16">
-        Services I Provide
-      </h1>
-      <div>
+    <div className="h-screen p-8 flex justify-center flex-col">
+      <h1 className="my-20 mb-10 text-center text-4xl">Services I Provide</h1>
+      <div className="w-full md:w-4/5 m-auto">
         <Services services={servicesData} />
       </div>
     </div>

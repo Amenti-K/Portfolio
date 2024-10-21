@@ -24,7 +24,7 @@ export default function About() {
 
           {/* Right Section: Paragraph */}
           <div className="w-full md:w-1/2 my-4 p-4 lg:p-8">
-            <p className="text-md text-gray-300">
+            <p className="text-md">
               With over two years of experience as a professional web and mobile
               app developer, I have acquired the skills and expertise necessary
               to ensure the success of your project. I take pride in every step

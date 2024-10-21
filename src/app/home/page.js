@@ -22,9 +22,9 @@ export default function Home() {
           <span className="sm:flex text-2xl text-lime-500">
             <Typewriter
               words={[
-                "Website Developer",
-                "UI/UX Designer",
-                "Mobile App Developer",
+                " Website Developer",
+                " UI/UX Designer",
+                " Mobile App Developer",
               ]}
               loop={true}
               cursor

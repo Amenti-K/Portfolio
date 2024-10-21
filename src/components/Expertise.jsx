@@ -26,7 +26,7 @@ export default function Expertise() {
       <h2 className="text-center text-4xl">My Expertise</h2>
       <div className="w-full md:w-4/5 flex flex-col md:flex-row items-center justify-center md:justify-between">
         <div className="w-full md:w-1/2 p-4">
-          <p className="text-md text-gray-300">
+          <p className="text-md">
             Welcome to my portfolio! I am passionate about modern web and app
             development, leveraging cutting-edge technologies to create dynamic,
             responsive, and user-friendly applications. Whether you want to
@@ -41,43 +41,43 @@ export default function Expertise() {
         <div className="flex flex-col justify-between w-full md:w-1/2 space-y-4 p-4">
           {/* Skills */}
           <div className="w-full p-6 flex flex-col items-start space-y-6">
-            <h3 className="text-1xl text-gray-300">Skills:</h3>
+            <h3 className="text-1xl ">Skills:</h3>
             <div className="grid grid-cols-3 gap-4 mt-4">
               <div className="flex items-center space-y-2 flex-col">
-                <FaReact className="text-blue-500 text-1xl" />
-                <span className="text-gray-300">React</span>
+                <FaReact className="text-blue-700 text-1xl" />
+                <span className="">React</span>
               </div>
               <div className="flex items-center space-y-2 flex-col">
-                <FaReact className="text-blue-500 text-1xl" />
-                <span className="text-gray-300">React Native</span>
+                <FaReact className="text-blue-700 text-1xl" />
+                <span className="">React Native</span>
               </div>
               <div className="flex items-center space-y-2 flex-col">
-                <SiNextdotjs className="text-black text-1xl text-white" />
-                <span className="text-gray-300">Next.js</span>
+                <SiNextdotjs className="text-1xl text-white-700" />
+                <span className="">Next.js</span>
               </div>
               <div className="flex items-center space-y-2 flex-col">
-                <FaNodeJs className="text-green-500 text-1xl" />
-                <span className="text-gray-300">Node.js</span>
+                <FaNodeJs className="text-green-700 text-1xl" />
+                <span className="">Node.js</span>
               </div>
               <div className="flex items-center space-y-2 flex-col">
-                <SiExpress className="text-gray-500 text-1xl" />
-                <span className="text-gray-300">Express.js</span>
+                <SiExpress className="text-gray-200 text-1xl" />
+                <span className="">Express.js</span>
               </div>
               <div className="flex items-center space-y-2 flex-col">
                 <SiMongodb className="text-green-700 text-1xl" />
-                <span className="text-gray-300">MongoDB</span>
+                <span className="">MongoDB</span>
               </div>
               <div className="flex items-center space-y-2 flex-col">
-                <SiPostgresql className="text-blue-500 text-1xl" />
-                <span className="text-gray-300">Postgres</span>
+                <SiPostgresql className="text-blue-700 text-1xl" />
+                <span className="">Postgres</span>
               </div>
             </div>
           </div>
 
           {/* Education */}
           <div className="w-full p-6 flex flex-col items-start space-y-6">
-            <h3 className="text-1xl text-gray-300">Education:</h3>
-            <p className="text-md text-gray-300 ml-4">
+            <h3 className="text-1xl">Education:</h3>
+            <p className="text-md ml-4">
               2022 - Present: Computer Science, Addis Ababa University
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function Expertise() {
       {/* Counter Section */}
       <div
         ref={ref}
-        className="flex flex-col md:flex-row justify-center md:justify-between w-full md:w-4/5 mt-10 space-y-4"
+        className="flex flex-col md:flex-row justify-center md:justify-between w-full md:w-4/5 mt-10 space-y-4 md:space-y-0"
       >
         {/* Coding Hours */}
         <div className="flex flex-row">
