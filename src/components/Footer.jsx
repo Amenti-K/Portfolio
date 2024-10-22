@@ -2,13 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 dark:bg-zinc-200 text-white dark:text-gray-700 py-6 pb-4 px-32 flex items-center justify-between">
-      {/* Logo */}
-      <div className="text-3xl font-bold mb-2">Amenti</div>
-
+    <footer className="md:py-6 pb-4 px-8 md:px-32 flex items-center justify-center w-full">
       {/* Copyright statement */}
-      <p className="text-sm">
-        &copy; 2024 by <span className="font-bold">Amenti</span>. All rights
+      <p className="text-sm w-max md:text-xl">
+        &copy; 2024 by <span className="md:text-2xl">Amenti</span>. All rights
         reserved.
       </p>
     </footer>

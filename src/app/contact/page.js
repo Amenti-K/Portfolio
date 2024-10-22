@@ -8,7 +8,7 @@ export default function Contact() {
   const emailAddress = "amenti1kebede@gmail.com"; // Replace with your actual email
 
   return (
-    <div className="p-8 min-h-screen bg-gray-800 dark:bg-zinc-100 text-white dark:text-gray-800 flex flex-col items-center justify-center">
+    <div className="p-8 min-h-screen flex flex-col items-center justify-center">
       {/* Header */}
       <h1 className="text-5xl font-bold text-center">
         Let’s work <br /> together
@@ -21,7 +21,7 @@ export default function Contact() {
       </button>
 
       {/* Contact Info */}
-      <div className="mt-12 text-center flex flex-row justify-around w-3/4">
+      <div className="mt-12 text-center flex flex-col space-y-4 md:flex-row md:space-y-0 justify-around w-full md-w-3/4">
         <div className="flex flex-col items-start">
           <span className="text-2xl font-bold">Call:</span>
           <span className="text-lg">{phoneNumber}</span>
