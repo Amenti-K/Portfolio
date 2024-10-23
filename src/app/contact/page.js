@@ -15,9 +15,11 @@ export default function Contact() {
       </h1>
 
       {/* Button */}
-      <button className="mt-8 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center space-x-2">
-        <FaTelegramPlane className="text-2xl" />
-        <span className="text-lg font-medium">Say Hello</span>
+      <button className="mt-8 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full">
+        <a className="flex items-center space-x-2" href="http://t.me/THE_AACE">
+          <FaTelegramPlane className="text-2xl" />
+          <span className="text-lg font-medium">Say Hello</span>
+        </a>
       </button>
 
       {/* Contact Info */}

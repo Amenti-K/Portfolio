@@ -17,14 +17,29 @@ export default function Home() {
         <h1 className="text-3xl md:text-5xl w-max">Amenti Kebede</h1>
 
         {/* Professions with Typing Effect */}
-        <h2 className="hidden md:flex text-1xl md:text-xl text-lime-500 w-max">
-          ___You're goto{" "}
-          <span className="sm:flex text-2xl text-lime-500">
+          <span className="md:hidden text-2xl ml-2 text-lime-500">
             <Typewriter
               words={[
-                " Website Developer",
-                " UI/UX Designer",
-                " Mobile App Developer",
+                "Website Developer",
+                "UI/UX Designer",
+                "Mobile App Developer",
+              ]}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={80}
+              deleteSpeed={60}
+              delaySpeed={1000}
+            />
+          </span>
+        <h2 className="hidden md:flex text-sm md:text-xl text-lime-500 w-max">
+          You're goto{" "}
+          <span className="sm:flex text-2xl ml-2 text-lime-500">
+            <Typewriter
+              words={[
+                "Website Developer",
+                "UI/UX Designer",
+                "Mobile App Developer",
               ]}
               loop={true}
               cursor
