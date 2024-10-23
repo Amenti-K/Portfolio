@@ -7,36 +7,30 @@ export default function ProjectCard({
   tools,
   index,
 }) {
-  const isEven = index % 2 === 0;
-
   return (
     <div
-      className="flex flex-col md:flex-row items-center justify-center w-1/2 h-[50vh]
-                 dark:bg-zinc-100 bg-gray-800 transition-colors duration-300 rounded-lg"
+      className="flex flex-col md:flex-row items-center justify-center w-full md:h-[80vh]
+                 transition-colors duration-300 rounded-lg overflow-hidden p-10"
     >
-      {/* Conditional rendering for even/odd layout */}
-      <div
-        className={`flex-1 ${
-          isEven ? "order-2" : "order-1"
-        } h-full overflow-hidden`}
-      >
+      {/* Image section */}
+      <div className="flex-1 h-full w-full order-1 md:order-2">
         <img
           src={picture}
           alt={name}
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          className="w-full max-h-[70vh] md:h-full object-contain md:object-contain rounded-none md:rounded-l-lg shadow-lg"
         />
       </div>
-
-      <div className={`flex-1 ${isEven ? "order-1" : "order-2"} text-left p-6`}>
-        <h2 className="text-2xl font-bold mb-4 dark:text-black text-white">
+      {/* Text section */}
+      <div className="flex-1 text-left py-10 px-10 flex flex-col justify-center md:order-1 order-2 md:text-left text-center space-y-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
           {name}
         </h2>
-        <p className="dark:text-gray-600 text-gray-300 mb-4">{description}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-gray-300 mb-4 text-md md:text-lg">{description}</p>
+        <div className="flex flex-wrap justify-center md:justify-start gap-2">
           {tools.map((tool, idx) => (
             <span
               key={idx}
-              className="dark:bg-gray-200 bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold dark:text-black text-white"
+              className="bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold text-white"
             >
               {tool}
             </span>

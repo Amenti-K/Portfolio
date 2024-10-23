@@ -131,7 +131,7 @@ export default function Expertise() {
             <div className="flex flex-row text-center">
               <CountUp
                 start={0}
-                end={3}
+                end={2}
                 duration={3}
                 className="text-5xl font-bold text-lime-500"
               />

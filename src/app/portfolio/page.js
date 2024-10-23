@@ -4,30 +4,26 @@ import ProjectCard from "../../components/ProjectCard";
 export default function Projects() {
   const projects = [
     {
-      name: "Portfolio Website",
-      picture: "/assets/images/profile.jpg",
-      description: "A personal portfolio to showcase my projects and skills.",
-      tools: ["React", "Tailwind CSS", "Next.js"],
+      name: "Just Todo",
+      picture: "/assets/images/JustTodo.jpg", // Update this with the correct image path
+      description:
+        "A responsive and dynamic to-do list application with task management, reminders, and calendar integration.",
+      tools: ["React", "React Native", "SQLite", "Expo"],
       index: 0,
     },
     {
-      name: "E-Commerce App",
-      picture: "/assets/images/profile.jpg",
-      description: "A fully functional e-commerce app with a custom CMS.",
-      tools: ["Node.js", "Express", "MongoDB", "React"],
+      name: "Guest House",
+      picture: "/assets/images/GHM.jpeg",
+      description:
+        "The Guest House Rental Company Website offers travelers a convenient platform to find and book comfortable accommodations in various locations.",
+      tools: ["PHP", "XAMPP", "MySQL"],
       index: 1,
-    },
-    {
-      name: "Mobile Banking App",
-      picture: "/assets/images/profile.jpg",
-      description: "A banking app built with React Native and Firebase.",
-      tools: ["React Native", "Firebase"],
-      index: 2,
     },
   ];
 
   return (
-    <div className="flex items-center flex-col bg-zinc-100 dark:bg-gray-800 transition-colors duration-300  px-4 py-24 gap-y-8">
+    <div className="flex items-center flex-col transition-colors duration-300 min-h-full px-4 py-24 gap-y-8">
+      <h1 className="text-center text-4xl">Projects</h1>
       {projects.map((project) => (
         <ProjectCard
           key={project.index}
