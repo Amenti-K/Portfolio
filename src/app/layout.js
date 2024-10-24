@@ -12,6 +12,18 @@ const SourceCodePro = Source_Code_Pro({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={SourceCodePro.className}>
+      <head>
+        <title>Amenti | Portfolio</title>
+        <meta
+          name="description"
+          content="Explore Amenti's portfolio, showcasing projects in web development, mobile app development, and software solutions."
+        />
+        <meta
+          name="keywords"
+          content="Amenti, portfolio, web development, mobile apps, software developer, full-stack developer"
+        />
+        <meta name="author" content="Amenti" />
+      </head>
       <body>
         <Nav />
         {children}

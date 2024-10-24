@@ -17,21 +17,21 @@ export default function Home() {
         <h1 className="text-3xl md:text-5xl w-max">Amenti Kebede</h1>
 
         {/* Professions with Typing Effect */}
-          <span className="md:hidden text-2xl ml-2 text-lime-500">
-            <Typewriter
-              words={[
-                "Website Developer",
-                "UI/UX Designer",
-                "Mobile App Developer",
-              ]}
-              loop={true}
-              cursor
-              cursorStyle="|"
-              typeSpeed={80}
-              deleteSpeed={60}
-              delaySpeed={1000}
-            />
-          </span>
+        <span className="md:hidden text-2xl ml-2 text-lime-500">
+          <Typewriter
+            words={[
+              "Website Developer",
+              "UI/UX Designer",
+              "Mobile App Developer",
+            ]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={80}
+            deleteSpeed={60}
+            delaySpeed={1000}
+          />
+        </span>
         <h2 className="hidden md:flex text-sm md:text-xl text-lime-500 w-max">
           You're goto{" "}
           <span className="sm:flex text-2xl ml-2 text-lime-500">
@@ -67,11 +67,14 @@ export default function Home() {
           </Link>
 
           {/* Resume Button */}
-          <Link href="/resume.pdf" passHref>
-            <button className="px-4 md:px-8 py-2 text-white rounded-md border hover:bg-opacity-80 bg-gray-700 transition duration-300">
-              Resume
-            </button>
-          </Link>
+          <a
+            href="/assets/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 md:px-8 py-2 text-white rounded-md border hover:bg-opacity-80 bg-gray-700 transition duration-300"
+          >
+            Resume
+          </a>
         </div>
       </div>
 
