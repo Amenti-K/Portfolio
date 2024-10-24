@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useRef } from "react";
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 export default function ProjectCard({ name, picture, description, tools }) {
   // Ref for the About section
-  const aboutRef = useRef(null);
-  const isInView = useInView(aboutRef, { once: true, margin: "-100px" });
+  const projectRef = useRef(null);
+  const isInView = useInView(projectRef, { once: true, margin: "-100px" });
 
   // Framer motion variants for animations
   const imageAnimation = {
@@ -28,21 +29,23 @@ export default function ProjectCard({ name, picture, description, tools }) {
   };
   return (
     <div
-      ref={aboutRef}
+      ref={projectRef}
       className="flex flex-col md:flex-row items-center justify-center w-full md:h-[80vh]
                  transition-colors duration-300 rounded-lg overflow-hidden p-10"
     >
       {/* Image section */}
       <motion.div
-        className="flex-1 h-full w-full md:order-1 order-2"
+        className="flex-1 h-full w-full md:order-1 order-2 items-center"
         variants={imageAnimation}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"} // Trigger animation when in view
       >
-        <img
+        <Image
           src={picture}
           alt={name}
-          className="w-full max-h-[70vh] md:h-full object-contain md:object-contain rounded-none md:rounded-l-lg shadow-lg"
+          width={1000}
+          height={700}
+          className="w-full max-h-[70vh] md:h-full object-contain md:object-contain rounded-none md:rounded-lg shadow-lg m-auto"
         />
       </motion.div>
       {/* Text section */}

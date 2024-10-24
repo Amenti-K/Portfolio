@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className="text-3xl md:text-5xl w-max">Amenti Kebede</h1>
 
         {/* Professions with Typing Effect */}
-        <span className="md:hidden text-2xl ml-2 text-lime-500">
+        <span className="md:hidden text-2xl text-lime-500">
           <Typewriter
             words={[
               "Website Developer",
@@ -33,7 +33,7 @@ export default function Home() {
           />
         </span>
         <h2 className="hidden md:flex text-sm md:text-xl text-lime-500 w-max">
-          You're goto{" "}
+          You&apos;re goto{" "}
           <span className="sm:flex text-2xl ml-2 text-lime-500">
             <Typewriter
               words={[
@@ -54,7 +54,7 @@ export default function Home() {
         {/* Description */}
         <p className="text-sm md:text-lg text-gray-300">
           I am a website and mobile application developer based in Addis Ababa,
-          and I’m very passionate and dedicated to my work.
+          and I am very passionate and dedicated to my work.
         </p>
 
         {/* Buttons */}
