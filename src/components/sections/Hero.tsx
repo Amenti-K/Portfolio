@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   const handleResumeDownload = () => {
-    const resumeUrl = "/public/assets/AK Resume 2025.pdf";
+    const resumeUrl = "/assets/AK Resume 2025.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Amenti_Kebede_Resume.pdf";
