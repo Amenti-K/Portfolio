@@ -10,6 +10,16 @@ export const Hero = () => {
     }
   };
 
+  const handleResumeDownload = () => {
+    const resumeUrl = "/public/assets/AK Resume 2025.pdf";
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Amenti_Kebede_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
@@ -105,8 +115,8 @@ export const Hero = () => {
             >
               Get In Touch
             </Button>
-            <Button variant="outline" size="lg" onClick={scrollToAbout}>
-              Learn More
+            <Button variant="outline" size="lg" onClick={handleResumeDownload}>
+              Resume
             </Button>
           </div>
 
