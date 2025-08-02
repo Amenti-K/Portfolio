@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* Resume Button */}
           <a
-            href="/assets/Resume.pdf"
+            href="/assets/AK Resume 2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 md:px-8 py-2 text-white rounded-md border hover:bg-opacity-80 bg-gray-700 transition duration-300"
