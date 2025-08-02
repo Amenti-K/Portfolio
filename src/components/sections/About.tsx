@@ -50,7 +50,7 @@ export const About = () => {
               <div className="w-80 h-80 rounded-2xl bg-gradient-primary p-1 animate-glow">
                 <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center overflow-hidden">
                   <img
-                    src="/public/assets/profile.jpg"
+                    src="/assets/profile.jpg"
                     alt="Amenti Kebede - Fullstack Developer"
                     className="w-full h-full object-cover"
                     onError={(e) => {
