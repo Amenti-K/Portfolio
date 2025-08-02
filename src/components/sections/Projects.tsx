@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { projects, featuredProjects, type Project } from '@/data/projects';
-import { Github, ExternalLink, Star } from 'lucide-react';
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { projects, featuredProjects, type Project } from "@/data/projects";
+import { Github, ExternalLink, Star } from "lucide-react";
 
 export const Projects = () => {
   const [showAll, setShowAll] = useState(false);
@@ -20,7 +20,7 @@ export const Projects = () => {
             onError={(e) => {
               // Fallback gradient background if image doesn't exist
               const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
+              target.style.display = "none";
               target.parentElement!.innerHTML = `
                 <div class="w-full h-48 bg-gradient-primary flex items-center justify-center">
                   <div class="text-white font-semibold text-lg">${project.title}</div>
@@ -36,7 +36,7 @@ export const Projects = () => {
           )}
         </div>
       </CardHeader>
-      
+
       <CardContent className="p-6">
         <div className="space-y-4">
           <div>
@@ -51,11 +51,7 @@ export const Projects = () => {
           {/* Technologies */}
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
-              <Badge 
-                key={tech} 
-                variant="secondary"
-                className="text-xs"
-              >
+              <Badge key={tech} variant="secondary" className="text-xs">
                 {tech}
               </Badge>
             ))}
@@ -63,15 +59,10 @@ export const Projects = () => {
 
           {/* Links */}
           <div className="flex gap-3 pt-2">
-            <Button
-              variant="outline"
-              size="sm"
-              asChild
-              className="flex-1"
-            >
-              <a 
-                href={project.githubLink} 
-                target="_blank" 
+            <Button variant="outline" size="sm" asChild className="flex-1">
+              <a
+                href={project.githubLink}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2"
               >
@@ -79,21 +70,19 @@ export const Projects = () => {
                 Code
               </a>
             </Button>
-            <Button
-              size="sm"
-              asChild
-              className="flex-1 bg-gradient-primary"
-            >
-              <a 
-                href={project.liveDemoLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2"
-              >
-                <ExternalLink size={16} />
-                Demo
-              </a>
-            </Button>
+            {project.liveDemoLink != "" && (
+              <Button size="sm" asChild className="flex-1 bg-gradient-primary">
+                <a
+                  href={project.liveDemoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <ExternalLink size={16} />
+                  Demo
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </CardContent>
@@ -108,7 +97,8 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work and side projects that demonstrate my skills and passion for development
+            A showcase of my recent work and side projects that demonstrate my
+            skills and passion for development
           </p>
         </div>
 
@@ -134,7 +124,8 @@ export const Projects = () => {
               onClick={() => setShowAll(true)}
               className="hover:shadow-soft transition-all duration-300"
             >
-              View All Projects ({projects.length - featuredProjects.length} more)
+              View All Projects ({projects.length - featuredProjects.length}{" "}
+              more)
             </Button>
           </div>
         )}
@@ -158,14 +149,15 @@ export const Projects = () => {
             Interested in working together?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-            I'm always open to discussing new opportunities and exciting projects.
+            I'm always open to discussing new opportunities and exciting
+            projects.
           </p>
-          <Button 
+          <Button
             className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
             onClick={() => {
-              const contactSection = document.getElementById('contact');
+              const contactSection = document.getElementById("contact");
               if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
+                contactSection.scrollIntoView({ behavior: "smooth" });
               }
             }}
           >
