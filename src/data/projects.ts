@@ -34,6 +34,29 @@ export const projects: Project[] = [
   },
   {
     id: "2",
+    title: "Silicon Technologies Website",
+    description:
+      "A full-stack company profile and admin management system with OTP-based authentication, role-based access, partner and resource tracking, and email notifications. Built with Next.js, NestJS, Prisma, and PostgreSQL for scalability and security.",
+    technologies: [
+      "Next.js",
+      "React Query",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL Neon",
+      "Nodemailer",
+      "JWT",
+      "Bcrypt",
+    ],
+    image: "/assets/Silicon-Tech.png",
+    githubLink: "https://github.com/Amenti-K/silicon_tech",
+    liveDemoLink: "https://silicon-tech.vercel.app",
+    featured: true,
+  },
+  {
+    id: "3",
     title: "Just ToDo",
     description:
       "A cross-platform mobile app built with Expo and React Native for efficient task management. Features offline-first local database, categorized task organization, calendar integration, and notification support. Designed with a clean and minimal UX.",
@@ -50,7 +73,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "3",
+    id: "4",
     title: "GuestHouse Booking System",
     description:
       "A simple web-based platform to manage guest houses with listing features, booking system, and availability tracking. Built as a class project with PHP and MySQL.",
